@@ -1,0 +1,138 @@
+{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+font-size: 10px;
+font-family: 'Tajawal', sans-serif;
+  color:white;
+
+ 
+}
+h1 {
+  margin: 0;
+font-size: 12px;
+font-family: 'Tajawal', sans-serif;
+  color:white;
+    vertical-align: top;
+ 
+}
+img {
+  height: 70px;
+    width: 90px;
+    vertical-align: bottom;
+    text-align: left;
+ 
+}
+p {
+  margin: 0;
+font-family: 'Tajawal', sans-serif;
+  color:black;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+ vertical-align: top;
+    
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.btn {
+  background-color: #ffffff;
+  border: none;
+  color: #00A69C ;
+  padding: 16px 32px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.btn:hover {opacity: 0.6}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #00A69C;
+
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color:#00A69C;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Style the content */
+.content {
+    background-color: #00A69C;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        background-color: #00A69C;
+    }     
+}
+@media screen and (max-width: 420px) {
+.footer {
+        background-color: #00A69C;
+    } 
+}
